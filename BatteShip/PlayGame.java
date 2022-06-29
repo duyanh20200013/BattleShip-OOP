@@ -325,6 +325,7 @@ public class PlayGame extends JLabel implements ActionListener {
         } else {
             EndScreen end=new EndScreen(1120,690,false,0);
         }
+        this.clip.stop();
         frame.dispose();
         computerHit=0;
         playerHit=0;
