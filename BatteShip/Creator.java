@@ -560,6 +560,7 @@ public class Creator extends JLabel implements MouseListener, MouseMotionListene
     }
 
     public void goToPlay() {
+        this.clip.stop();
         new PlayGame(1220, 820, playerMap, computerMap, isHard, A, B, isNgangPlayer,isNgangComputer,isPlaySound );
         frame.dispose();
     }
